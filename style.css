@@ -1,0 +1,274 @@
+.photofemme {
+    width: 100%;
+    height: 100%;
+  }
+
+  .custom-ml-auto {
+    margin-left: auto;
+    margin-right: 10%;
+}
+  #nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+
+  }
+  .textnavbar {
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactnavbar {
+
+    width: 150px;
+    height: 50px;
+    background-color: #980101;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
+  }
+  
+  .photofemme {
+    z-index: 1;
+  }
+  
+  .photofemme:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+    text-align: center;
+}
+
+.section1 div {
+    margin-bottom: 20px;
+}
+
+.section1 img {
+
+    margin-bottom: 20px;
+}
+
+.textsection1 {
+    width: 50%;
+}
+
+.boutoncontactsection1 {
+    width: 150px;
+    height: 50px;
+    background-color: #980101;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
+}
+
+.cardsection1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.cardsection1 div {
+    border-color: white;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+/* Section 2 */
+.section2 {
+    padding: 5% 5% 5% 5%;
+
+    width: 100%;
+    height: 75%;
+    background-color: black;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+.textsection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 25%;
+    margin-left: 5%;
+}
+
+
+.barresection2 {
+    width: 5px;
+    height: 300px;
+    background-color: white;
+    margin-top: 10%;
+} 
+
+.imagesection2 {
+    max-width: 40%;
+    height: auto;
+}
+
+.textsection2 {
+    opacity: 0; /* Commencez avec une opacité à 0 pour cacher le contenu */
+    transform: translateX(-100%); /* Déplacez le contenu à gauche de l'écran */
+    transition: opacity 3s ease, transform 3s ease; /* Ajoutez une transition pour une animation fluide */
+}
+
+/* Appliquez les styles lorsque la section2 est visible dans la fenêtre visible (utilisez les préfixes de navigateur appropriés) */
+.section2.in-view .textsection2 {
+    opacity: 1; /* Augmentez l'opacité pour afficher le contenu */
+    transform: translateX(0); /* Déplacez le contenu à sa position d'origine */
+}
+
+/* Section 3 */
+
+.section3 {
+    padding: 5% 5% 5% 5%;
+    width: 100%;
+    height: 75%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse ;
+    justify-content: space-between;
+}
+
+
+.textsection3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 25%;
+    margin-right: 5%;
+}
+
+
+.barresection3 {
+    width: 5px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10%;
+} 
+
+.imagesection3 {
+    max-width: 40%;
+    height: auto;
+}
+
+.textsection3 {
+    opacity: 0; 
+    transform: translateX(100%); 
+    transition: opacity 3s ease, transform 3s ease; 
+}
+
+
+.section3.in-view .textsection3 {
+    opacity: 1; 
+    transform: translateX(0);
+}
+
+.photofessefemme {
+    max-width: 100%;
+    max-height: 25%;
+}
+
+/* Section 4 */
+.section4 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; /* Commencez avec une opacité à 0 pour cacher la section */
+    transition: opacity 1.5s ease; /* Ajoutez une transition pour une animation fluide */
+}
+.section4.in-view {
+    opacity: 1; /* Augmentez l'opacité pour afficher la section */
+}
+.imagesection4 {
+    max-width: 50%;
+    margin-bottom: 1%;
+}
+.textsection4 {
+    margin-top: 1%;
+    max-width: 50%;
+}
+
+/* footer */
+
+footer {
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 5%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.infolegale {
+    width: 55%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.infolegale p {
+    font-size: small;
+    margin-left: 2%;
+}
