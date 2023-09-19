@@ -23,21 +23,6 @@ observer.observe(section2);
 
 
 
-const section3 = document.querySelector('.section3');
-const observer3 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-
-            section3.classList.add('in-view');
-        } else {
-            section3.classList.remove('in-view');
-        }
-    });
-});
-observer3.observe(section3);
-
-
-
 // Sélectionnez la section4
 const section4 = document.querySelector('.section4');
 

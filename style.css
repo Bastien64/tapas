@@ -1,4 +1,8 @@
 @media only screen and (min-width: 767px) {
+
+    body {
+        width: 100%;
+    }
     .photofemme {
         width: 100%;
         height: 100%;
@@ -23,7 +27,7 @@
     
       }
       .textnavbar {
-        width: 200px;
+
         height: 50px;
         background-color: #ffffff;
         color: rgb(0, 0, 0);
@@ -295,18 +299,10 @@
         opacity: 0;
         transition: opacity 2s ease-in-out;
         box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.486);
+        z-index: 20;
     
       }
-      .textnavbar {
-        width: 200px;
-        height: 50px;
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+
       .contactnavbar {
         width: 150px;
         height: 50px;
