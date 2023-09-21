@@ -39,3 +39,25 @@ const observer4 = new IntersectionObserver(entries => {
 
 // Observez la section4
 observer4.observe(section4);
+
+
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Chez Tapas, nous sommes impatients de vous aider à atteindre vos objectifs. N\'hésitez pas à nous contacter pour discuter de vos besoins, poser des questions ou planifier une consultation. Nous sommes là pour vous.', 'success')
+  })
+}
