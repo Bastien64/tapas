@@ -1,0 +1,16 @@
+    <div class="formdiv">
+    <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Nom complet</label>
+          <input type="text" name="name" id="full-name" placeholder="Nom et prénom" required="">
+          <label for="email-address">Adresse E-mail</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+          <label for="telephone">Numero de téléphone</label>
+          <input type="telephone" name="telephone" id="telephone" placeholder="00 00 00 00 00">
+          <label for="complaint">Message</label>
+          <textarea rows="6" name="complaint" id="complaint" placeholder="" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+        </fieldset>
+        <input type="submit" value="Envoyer" class="boutoncontactsection1" style="margin-top: 5%;">
+      </form>
+    </div>
