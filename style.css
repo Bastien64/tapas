@@ -74,10 +74,17 @@
         justify-content: center;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
       }
-      
+      .divphotofemme {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .photofemme {
         z-index: 1;
         height: 100vh;
+        width: auto;
+        background-color: #000000;
       }
       
       .photofemme:after {
